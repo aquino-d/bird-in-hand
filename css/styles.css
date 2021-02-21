@@ -1,0 +1,141 @@
+/* make logo wall skinnier and not as tall */
+/* make small tiles not as tall to make logo wall */
+
+
+body {
+    color: #222222;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Reusable Style */
+
+li,
+ul,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: #222222;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.underline {
+  border-bottom: 1px #222222 solid;
+
+  transition: all 0.3s ease-in-out;
+
+}
+
+.underline:hover {
+  border-color: transparent;
+
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 16%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    /* border-right: black solid 1px; */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    text-align: center;
+
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 7.5px;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #555555;
+  }
+
+  .social-media{
+    font-size: 1.50rem;
+  }
+
+  .logo {
+    width: 70%;
+  }
+
+  /* Style page content */
+  .main {
+    margin-left: 16%; /* Same as the width of the sidebar */
+    margin-right: 25px;
+    padding: 0px 12px;
+    /* delete this to have flex wrap work - trying overflow-x */
+    overflow-x: hidden; 
+  }
+
+  .gallery-grid {
+    display: flex;
+    /* Max-width will cause the gallery-grid > half tiles overlap large tiles - bad */
+    /* test min-height and min/maxwidth  later*/
+    /* min-height: 867px; */
+    flex-direction: row;
+  }
+
+  .gallery-grid {
+    padding-left: 24px;
+  }
+
+  .half-tiles {
+    padding: 0px 12px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
+  }
+
+  .half-tiles-img {
+    display: inline-block;
+
+  }
+
+  .half-tiles-first {
+    padding: 0px 12px 0px;
+  }
+
+  .half-tiles-second {
+    padding: 24px 12px 0px;
+  }
+
+  .gallery-large-tiles {
+    margin: 24px;
+    /* display: block; */
+  }
+
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .gallery-grid {
+    flex-direction: column;
+  }
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
