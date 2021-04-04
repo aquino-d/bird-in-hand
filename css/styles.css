@@ -48,6 +48,10 @@ a {
   padding-bottom: 25px;
 }
 
+.mb-12 {
+  margin-bottom: 12px;
+}
+
 .underline {
   border-bottom: 1px #222222 solid;
   transition: all 0.3s ease-in-out;
@@ -172,7 +176,7 @@ a {
 
   .parent {
     max-width: 580px;
-    margin: 15px;
+    margin: 12px;
     max-height: 400px;
     overflow: hidden;
     position: relative;
